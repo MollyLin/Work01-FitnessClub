@@ -1,0 +1,87 @@
+.slider
+	@extend %clearfix
+	margin-bottom: 35px
+	background: #292929
+	.bjqs
+		position: relative
+		z-index: 9
+		li
+			position: absolute
+			top: 0
+			width: 100%
+			.slide-left
+				width: 640px
+				float: left
+			.slide-right
+				width: 235px
+				float: right
+				height: inherit
+				+box-sizing(border-box)
+				display: block
+				position: absolute
+				left: 685px
+				top: 37px
+				z-index: 99
+				h2
+					font-size: 45px
+					color: $hot-color
+					margin-bottom: 20px
+				p
+					color: #949494
+					line-height: $line-height
+					margin-bottom: 35px
+				.more
+					background: #3f3f3f
+					padding: 10px 25px
+					color: #fff
+					&:hover
+						color: #fff
+						background: $hot-color
+.introduce
+	background: #fff
+	box-shadow: $content-box-shadow
+	padding: 25px 30px 29px 44px
+	margin-bottom: 35px
+	line-height: 33px
+	letter-spacing: 0.2px
+	font-size: 17px
+	em
+		color: $hot-color
+.content1
+	@extend %clearfix
+	padding: 25px 30px 45px 44px
+	box-shadow: $content-box-shadow
+	background: $content-background
+	h2
+		@extend %all-h2
+	em
+		@extend %all-em
+.latest
+	width: 575px
+	float: left
+.list1
+	@extend %clearfix
+	margin-bottom: 20px
+	h3
+		@extend %all-h3
+		margin-left: 220px
+	p
+		@extend %all-p
+		margin-left: 220px
+.img-border
+	@extend %img
+.side
+	float: right
+	width: 225px
+.service
+	li a
+		@extend %all-li
+.find
+	margin-top: 27px
+.find-text
+	@extend %input-text 
+	margin-top: 7px
+	margin-bottom: 15px
+.find-btn
+	@extend %button
+

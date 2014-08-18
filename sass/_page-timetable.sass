@@ -1,0 +1,45 @@
+.content3
+	@extend %clearfix
+	@extend %all-content
+	h2
+		@extend %all-h2
+		em
+			@extend %all-em
+	.ourtimetable
+		float: left
+		width: 575px
+		margin-right: 65px
+		p
+			line-height: $line-height
+		.box1	
+			@extend %box
+			border-bottom: #e5e5e5 1px solid
+		.box2
+			@extend %box
+			border-bottom: #e5e5e5 1px solid
+		.box3
+			@extend %box
+		.time
+			color: $hot-color
+			margin-top: 5px
+.events
+	@extend %clearfix
+	width: 225px
+	float: left
+	h3
+		@extend %all-h3
+	p
+		@extend %all-p
+	li a
+		float: left
+		@extend %all-li
+		color: $hot-color
+		padding-bottom: 5px
+		&:hover
+			color: $text-color
+	.img
+		border: 5px solid $border-color
+		margin: 13px 0 12px 0
+	.more
+		@extend %button
+		margin-top: 15px

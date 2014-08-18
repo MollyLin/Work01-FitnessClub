@@ -1,0 +1,53 @@
+body
+	background: image-url('bg.jpg')
+.wrap
+	width: $width
+	margin: 0 auto
+.header
+	position: relative
+	height: 115px
+	margin-bottom: 35px
+	h1 a
+		display: block
+		+bg('logo.png')
+		position: absolute
+		top: 20px
+		left: 10px
+.topbar
+	position: absolute
+	right: 0px
+	top: 40px
+	a
+		float: left
+		margin-left: 15px
+	.fb
+		display: block
+		+bg('dot-facebook.png')
+	.tweet
+		display: block
+		+bg('dot-tweet.png')	
+.menu
+	position: absolute
+	bottom: 0
+	right: 15px
+	h2
+		display: none
+	.current
+		a
+			color: $hot-color
+	li
+		float: left
+	a
+		display: block
+		margin-left: 35px
+		color: $text-color
+		font-weight: bold
+		&:hover
+			color: $hot-color
+.footer
+	text-align: center
+	line-height: $line-height
+	padding: 32px 0 45px 0 
+	font-size: 14px
+	a
+		color: $hot-color
